@@ -54,7 +54,7 @@ Everybody must have heard about a software named Git if they are developer. Git 
     Staging Area is a place that holds files that are modified. If you commit, these will be move to local git directory.
     Git Directory(.git) is a storage that stores project informations and object database. If you use 'git init' or 'git clone', this directory will be created.
     
-    
+    \pagebreak
     \subsection {To commit}
     You can add file into the staging area by using command 'git add'. And if you commit, the modified files which are stored in staging area will be move to local repository. To commit, you should type the following command in figure \ref{fig:commit}. And if you want to change remote repository too, you should use command 'git push'. You can also get update of the project from remote repository  be 'git fetch'. 
     \begin{figure}[h!]
@@ -78,9 +78,10 @@ Everybody must have heard about a software named Git if they are developer. Git 
     \centering
     \includegraphics[scale=0.5]{git_clone_remote}
     \caption{The 'git clone $<$URL$>$' command and result}
-    \label{fig:clone_local}
+    \label{fig:clone_remote}
     \end{figure}
     
+    \pagebreak
     \subsection {To push}
     In order to save changes in your local repository to remote one, you have to use command 'push'. Your current branch is origin and you have to push it to master branch in remote repository. The test is below figure \ref{fig:push}.
     \begin{figure}[h!]
@@ -91,10 +92,11 @@ Everybody must have heard about a software named Git if they are developer. Git 
     \end{figure}
     You MUST commit first when you push to remote repository. Also, make sure that you added all the files that have to be tracked to staging area.
 
+\pagebreak
 \section{Link to author's github page}
 To visit my repository, click on the following link: 
 \begin{itemize}
-    \item \href{https://github.com/zinuzian/assignment01}{zinuzian github}
+    \item \href{https://github.com/zinuzian/assignment01}{zinuzian github} \cite{github}
 \end{itemize}
 
 And figure \ref{fig:screenshot} is a screenshot of my project at github.
@@ -106,5 +108,8 @@ And figure \ref{fig:screenshot} is a screenshot of my project at github.
 \end{figure}
 
 \bibliographystyle{plain}
-\bibliography{references}
+\begin{thebibliography}{99}
+    \bibitem{github} https://github.com/zinuzian/assignment01
+\end{thebibliography}
+
 \end{document}
