@@ -1,4 +1,3 @@
-
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 
@@ -57,7 +56,7 @@ Everybody must have heard about a software named Git if they are developer. Git 
     
     
     \subsection {To commit}
-    You can add file into the staging area by using command 'git add'. And if you commit, the modified files which are stored in staging area will be move to local repository. To commit, you should type the following command in figure \ref{fig:commit}. And if you want to change remote repository too, you should use command 'git push'. You can also get projects from remote repository  be 'git fetch'. 
+    You can add file into the staging area by using command 'git add'. And if you commit, the modified files which are stored in staging area will be move to local repository. To commit, you should type the following command in figure \ref{fig:commit}. And if you want to change remote repository too, you should use command 'git push'. You can also get update of the project from remote repository  be 'git fetch'. 
     \begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{git_commit}
@@ -83,24 +82,26 @@ Everybody must have heard about a software named Git if they are developer. Git 
     \end{figure}
     
     \subsection {To push}
-    In order to save changes in your local repository to remote one, you have to use command 'push'. 
+    In order to save changes in your local repository to remote one, you have to use command 'push'. Your current branch is origin and you have to push it to master branch in remote repository. The test is below figure \ref{fig:push}.
     \begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{git_push}
-    \caption{The 'git push $<$URL$>$' command and result}
-    \label{fig:clone_local}
+    \caption{The 'git push origin master' command and result}
+    \label{fig:push}
     \end{figure}
-    
+    You MUST commit first when you push to remote repository. Also, make sure that you added all the files that have to be tracked to staging area.
 
 \section{Link to author's github page}
 To visit my repository, click on the following link: 
-\href{https://github.com/zinuzian/assignment01}{zinuzian github}
+\begin{itemize}
+    \item \href{https://github.com/zinuzian/assignment01}{zinuzian github}
+\end{itemize}
 
 And figure \ref{fig:screenshot} is a screenshot of my project at github.
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.5]{sc}
-\caption{The screenshot of github page}
+\caption{The screenshot of zinuzian github page}
 \label{fig:screenshot}
 \end{figure}
 
